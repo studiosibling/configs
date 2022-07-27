@@ -56,6 +56,10 @@ spring:
           uri: http://localhost:8096
           predicates:
             - Path=/api/v1/questions/**, /api/v1/questionnaire/**
+        - id: multimedia
+          uri: http://localhost:8097
+          predicates:
+            - Path=/api/v1/multimedia, /api/v1/multimedia-manager/**
         - id: openapi
           uri: http://localhost:8081
           predicates:

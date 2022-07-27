@@ -80,7 +80,7 @@ questionnaire:
 springdoc.api-docs.path: /api/v1/questionnaire/api-doc
 management.endpoints.web.exposure.include: "*"
 logging.level:
-  com.agenatech: INFO
+  com.agenatech: DEBUG
 health:
   config:
     enabled: false
