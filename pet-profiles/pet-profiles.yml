@@ -1,0 +1,36 @@
+server:
+  port: 8095
+  forward-headers-strategy: framework
+spring:
+  data.rest.base-path: api/v1
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        cache:
+          use_second_level_cache: true
+          region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+          queries: true
+          ehcache:
+            missing_cache_strategy: create
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pet-profiles?ssl=false
+    username: user
+    password: password
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+springdoc.api-docs.path: /api/v1/petprofiles/api-doc
+logging:
+  level:
+    com.agenatech: INFO
+health:
+  config:
+    enabled: false
+

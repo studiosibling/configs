@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://database.ceg7plbi7uaq.eu-north-1.rds.amazonaws.com:5432/pet-profiles?ssl=false
+    username: postgres
+    password: '{cipher}d4879146ce17ed3f1b55afbb90ae599a36328bc2647f1ca4fcc46595e75ed7a00215eb917fd93e71a71994455c35d1d1'
+    hikari:
+      connection-timeout: 20000

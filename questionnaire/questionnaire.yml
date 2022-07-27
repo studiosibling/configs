@@ -1,0 +1,86 @@
+server:
+  port: 8096
+  forward-headers-strategy: framework
+questionnaire:
+  questions:
+    - id: 0
+      value: Är allmäntillståndet påverkat?
+      answers:
+        - value: Ja
+        - value: Nej
+    - id: 1
+      value: Hur länge har detta pågått?
+      answers:
+    - id: 2
+      value: Vilka symptom?
+      answers:
+        - value: Sår
+        - value: Bitmärke
+        - value: Hälta
+        - value: Klobrott
+    - id: 3
+      value: Vet du vad som hänt?
+      answers:
+    - id: 4
+      value: Vilka symptom?
+      answers:
+        - value: Objekt i ögat
+        - value: Rodnad
+        - value: Kliar
+        - value: Kniper med ögat
+        - value: Vattniga ögon
+        - value: Luktar
+        - value: Förändrad pupillstorlek
+    - id: 5
+      value: Vilka symptom?
+      answers:
+        - value: Kliar
+        - value: Rodnad
+        - value: Fuktigt/Kladdigt
+        - value: Andra symptom
+    - id: 6
+      value: Vilka symptom?
+      answers:
+        - value: Luktar illa
+        - value: Äter inte
+        - value: Böld
+        - value: Hängande läpp
+    - id: 7
+      value: Är allmäntillståndet påverkat?
+      answers:
+        - value: Ja
+        - value: Nej
+    - id: 8
+      value: Vilka symptom?
+      answers:
+        - value: Hosta
+        - value: Väsande ljud
+        - value: Andas fort
+    - id: 9
+      value: Kan du uppskatta hur många andningar per minut?
+      answers:
+    - id: 10
+      value: Är allmäntillståndet påverkat?
+      answers:
+        - value: Ja
+        - value: Nej
+    - id: 11
+      value: Beskriv vad du behöver hjälp med
+      answers:
+        - value: Chipmärkning
+        - value: Avmaskning
+        - value: Reseintyg
+        - value: Kontrollintyg
+        - value: Kloklippning
+        - value: Check up
+        - value: Annat behov
+    - id: 12
+      value: Kan du beskriva vad du vill ha hjälp med?
+      answers:
+springdoc.api-docs.path: /api/v1/questionnaire/api-doc
+management.endpoints.web.exposure.include: "*"
+logging.level:
+  com.agenatech: INFO
+health:
+  config:
+    enabled: false

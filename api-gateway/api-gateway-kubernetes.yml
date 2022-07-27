@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: userProfilesPrincipal
+          uri: http://profiles
+          predicates:
+            - Path=/api/v1/profiles/me, /api/v1/profiles/me/pets
+            - Method=GET,POST,PUT,PATCH,DELETE
+          filters:
+            - AddPrincipalToPathFilter
+        - id: petprofiles
+          uri: http://profiles
+          predicates:
+            - Path=/api/v1/pets, /api/v1/pets/**, /api/v1/petprofiles/**, /api/v1/profiles/*/*, /api/v1/profiles/api-doc
+        - id: questionnaire
+          uri: http://questionnaire
+          predicates:
+            - Path=/api/v1/questions/**, /api/v1/questionnaire/**
+        - id: openapi
+          uri: http://api-gateway
+          predicates:
+            - Path=/v3/api-docs/**
+          filters:
+            - RewritePath=/v3/api-docs/(?<path>.*), /api/v1//$\{path}/api-doc
+keycloak-client:
+  server-url: https://auth.vetathome.se/auth
