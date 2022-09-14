@@ -98,6 +98,9 @@ questionnaire:
     - id: 17
       value: Vet du vad som hänt?
       answers:
+    - id: 18
+      value: Beskriva
+      answers:
 springdoc.api-docs.path: /api/v1/questionnaire/api-doc
 management.endpoints.web.exposure.include: "*"
 logging.level:
