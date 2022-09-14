@@ -32,19 +32,22 @@ questionnaire:
         - value: Kliar
         - value: Kniper med ögat
         - value: Vattniga ögon
-        - value: Luktar eller förändrad pupillstorlek
+        - value: Luktar 
+        - value: Förändrad pupillstorlek
     - id: 6
       value: Vilka symptom?
       answers: 
       - value: Kliar
       - value: Rodnad
-      - value: Fuktigt/kladdigt eller andra symptom
+      - value: Fuktigt/kladdigt 
+      - value: Andra symptom
     - id: 7
       value: Vilka symptom?
       answers:
       - value: Luktar illa
       - value: Äter inte
-      - value: Böld eller hängande läpp
+      - value: Böld 
+      - value: Hängande läpp
     - id: 8
       value: Är allmäntillståndet påverkat?
       answers:
@@ -70,9 +73,11 @@ questionnaire:
         - value: Ja
         - value: Nej
     - id: 13
-      value: EU Pass, reseintyg eller kontrollintyg. 
+      value:  
       sub_value: Man bör vara medveten om att djurägaren själv är ansvarig för att ta reda på vad som behövs vid utlandsresor.
       answers:
+      - value: EU Pass
+      - value: Reseintyg
       - value: Kontrollintyg
     - id: 14 
       value: Ange typ av intyg
@@ -82,7 +87,17 @@ questionnaire:
       answers:
       - value: Avmaskning
       - value: Kloklippning
-      - value: Checkup eller annat behov
+      - value: Checkup
+      - value: Annat behov  
+    - id: 16
+      value:
+      answers:
+      - value: Bitmärke
+      - value: Sår
+      - value: Klobrott
+    - id: 17
+      value: Vet du vad som hänt?
+      answers:
 springdoc.api-docs.path: /api/v1/questionnaire/api-doc
 management.endpoints.web.exposure.include: "*"
 logging.level:
