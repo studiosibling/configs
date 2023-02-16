@@ -12,16 +12,19 @@ questionnaire:
       value: Hur länge har detta pågått?
       answers:
     - id: 2
-      value: Vilka symptom?
+      value: Kan hunden förflytta sig. 
       answers:
-        - value: Sår
-        - value: Bitmärke
-        - value: Hälta
-        - value: Klobrott
+        - value: Ja
+        - value: Nej
     - id: 3
-      value: Vet du vad som hänt?
+      value: Vilket ben?
       answers:
     - id: 4
+      value: Generell stelhet.
+      answers:
+        - value: Ja
+        - value: Nej
+    - id: 5
       value: Vilka symptom?
       answers:
         - value: Objekt i ögat
@@ -29,53 +32,74 @@ questionnaire:
         - value: Kliar
         - value: Kniper med ögat
         - value: Vattniga ögon
-        - value: Luktar
+        - value: Luktar 
         - value: Förändrad pupillstorlek
-    - id: 5
-      value: Vilka symptom?
-      answers:
-        - value: Kliar
-        - value: Rodnad
-        - value: Fuktigt/Kladdigt
-        - value: Andra symptom
     - id: 6
       value: Vilka symptom?
-      answers:
-        - value: Luktar illa
-        - value: Äter inte
-        - value: Böld
-        - value: Hängande läpp
+      answers: 
+      - value: Kliar
+      - value: Rodnad
+      - value: Fuktigt/kladdigt 
+      - value: Andra symptom
     - id: 7
-      value: Är allmäntillståndet påverkat?
-      answers:
-        - value: Ja
-        - value: Nej
-    - id: 8
       value: Vilka symptom?
       answers:
-        - value: Hosta
-        - value: Väsande ljud
-        - value: Andas fort
-    - id: 9
-      value: Kan du uppskatta hur många andningar per minut?
-      answers:
-    - id: 10
+      - value: Luktar illa
+      - value: Äter inte
+      - value: Böld 
+      - value: Hängande läpp
+    - id: 8
       value: Är allmäntillståndet påverkat?
       answers:
         - value: Ja
         - value: Nej
-    - id: 11
-      value: Beskriv vad du behöver hjälp med
+    - id: 9
+      value: Vilka symptom?
       answers:
-        - value: Chipmärkning
-        - value: Avmaskning
-        - value: Reseintyg
-        - value: Kontrollintyg
-        - value: Kloklippning
-        - value: Check up
-        - value: Annat behov
+      - value: Hosta
+      - value: Väsande ljud
+      - value: Andas fort
+    - id: 10
+      value: Uppskatta andning/minut
+      answers:
+    - id: 11
+      value: Är allmäntillståndet påverkat?
+      answers:
+        - value: Ja
+        - value: Nej
     - id: 12
-      value: Kan du beskriva vad du vill ha hjälp med?
+      value: Är djuret kemiskt kastrerat sen innan.
+      answers:
+        - value: Ja
+        - value: Nej
+    - id: 13
+      value:  
+      sub_value: Man bör vara medveten om att djurägaren själv är ansvarig för att ta reda på vad som behövs vid utlandsresor.
+      answers:
+      - value: EU Pass
+      - value: Reseintyg
+      - value: Kontrollintyg
+    - id: 14 
+      value: Ange typ av intyg
+      answers: 
+    - id: 15
+      value: 
+      answers:
+      - value: Avmaskning
+      - value: Kloklippning
+      - value: Checkup
+      - value: Annat behov  
+    - id: 16
+      value:
+      answers:
+      - value: Bitmärke
+      - value: Sår
+      - value: Klobrott
+    - id: 17
+      value: Vet du vad som hänt?
+      answers:
+    - id: 18
+      value: Beskriva
       answers:
 springdoc.api-docs.path: /api/v1/questionnaire/api-doc
 management.endpoints.web.exposure.include: "*"
