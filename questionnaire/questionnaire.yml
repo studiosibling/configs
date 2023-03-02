@@ -102,10 +102,10 @@ questionnaire:
       value: Beskriva
       answers:
     - id: 19
-      value: Vilken typ av kremering vill du ha?
+      value: Vad är nästa steg?
       answers:
       - value: Allmän kremering
-      - value: Separat Kremering
+      - value: Separat kremering
 springdoc.api-docs.path: /api/v1/questionnaire/api-doc
 management.endpoints.web.exposure.include: "*"
 logging.level:
