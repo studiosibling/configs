@@ -101,10 +101,15 @@ questionnaire:
     - id: 18
       value: Beskriva
       answers:
+    - id: 19
+      value: Vad är nästa steg?
+      answers:
+      - value: Allmän kremering
+      - value: Separat kremering
 springdoc.api-docs.path: /api/v1/questionnaire/api-doc
 management.endpoints.web.exposure.include: "*"
 logging.level:
-  com.agenatech: INFO
+  com.agenatech: DEBUG
 health:
   config:
     enabled: false
