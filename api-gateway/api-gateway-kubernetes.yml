@@ -34,4 +34,4 @@ spring:
           filters:
             - RewritePath=/refresh/questionnaire, /actuator/refresh
 keycloak-client:
-  server-url: https://auth-dev.vetathome.se/auth
+  server-url: https://auth.vetathome.se/auth
