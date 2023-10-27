@@ -5,7 +5,7 @@ spring:
         - id: userProfilesPrincipal
           uri: http://profiles
           predicates:
-            - Path=/api/v1/profiles/me, /api/v1/profiles/me/pets, /api/v1/email/send
+            - Path=/api/v1/profiles/me, /api/v1/profiles/me/pets, /api/v1/email/send, /api/v1/hubspot/proxy/me
             - Method=GET,POST,PUT,PATCH,DELETE
           filters:
             - AddPrincipalToPathFilter
